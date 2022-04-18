@@ -66,7 +66,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/create-resource')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Create resource",
@@ -98,7 +98,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/modify-resource')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Modify Resource",
@@ -120,7 +120,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/remove-resource')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Remove resource",
@@ -142,7 +142,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/retrieve-header-only')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Retrieve header only",
@@ -164,7 +164,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/retrieve-resource')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Retrieve resource",
@@ -206,7 +206,7 @@
       "type": "Microsoft.ApiManagement/service/apis/operations",
       "name": "[concat(parameters('ApimServiceName'), '/echo-api/retrieve-resource-cached')]",
       "dependsOn": [
-        "[resourceId('Microsoft.ApiManagement/service/apis/operations', parameters('ApimServiceName'), 'echo-api')]"
+        "[resourceId('Microsoft.ApiManagement/service/apis', parameters('ApimServiceName'), 'echo-api')]"
       ],
       "properties": {
         "displayName": "Retrieve resource (cached)",
